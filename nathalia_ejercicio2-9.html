@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.wrapper{
+        float: right;
+      }
+
+      div.grid{
+        color: white;
+        background: red;
+        padding: 5px;
+      }
+
+      #moveMe{
+        background: blue;
+        position: relative;
+        bottom: 10px;
+        /*En mi laptop el elemento se queda cerca del borde izquierdo, no se sí había otra manera de hacer el ejercicio.*/
+        left: -1500px;
+      }
+
+      /*
+      * El hueco se genera porque con position:relative;
+      * el elemento se desplaza visualmente, manteniendo su 
+      * espacio original en el documento.
+      */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="grid">x</div>
+      <div class="grid">x</div>
+      <div class="grid" id="moveMe">x</div>
+      <div class="grid">x</div>
+      <div class="grid">x</div>
+    </div>
+  </body>
+</html>
